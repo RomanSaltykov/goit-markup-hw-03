@@ -16,234 +16,265 @@
   <body>
     <!-- Шапка сайта-->
 
-    <header class="header">
-      <nav class="nav">
-        <!-- <a href="/"><img src="./images/webstudio.svg" alt="Логотип сайта" width="145"></a> -->
-        <a class="logo link" href="index.html" lang="en"
-          ><span class="logo web">Web</span>Studio</a
-        >
-        <ul class="list">
-          <li class="nav list item">
-            <a class="nav-links link" href="index.html">Студия</a>
-          </li>
-          <li class="nav list item">
-            <a class="nav-links link current" href="portfolio.html"
-              >Портфолио</a
+    <div class="header-container">
+      <!-- Шапка сайта-->
+
+      <header class="header">
+        <nav class="nav">
+          <!-- <a href="/"><img src="./images/webstudio.svg" alt="Логотип сайта" width="145"></a> -->
+          <a class="logo link" href="index.html" lang="en">
+            <span class="logo web">Web</span>Studio</a
+          >
+          <ul class="list navigation-list">
+            <li class="nav list item">
+              <a class="nav-links link" href="index.html">Студия</a>
+            </li>
+            <li class="nav list item">
+              <a class="nav-links link current" href="portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="nav list item">
+              <a class="nav-links link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="contacts list mail-phone">
+          <li class="contacts list item">
+            <a
+              class="contacts link h-cont phone"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
             >
           </li>
-          <li class="nav list item">
-            <a class="nav-links link" href="">Контакты</a>
+          <li class="contacts list item">
+            <a class="contacts link h-cont" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
-      </nav>
-
-      <ul class="contacts list">
-        <li class="contacts list item">
-          <a class="contacts link h-cont" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li class="contacts list item">
-          <a class="contacts link h-cont" href="tel:+380961111111"
-            >+38 096 111 11 11</a
-          >
-        </li>
-      </ul>
-    </header>
+      </header>
+    </div>
 
     <main>
-      <!-- Фильтр портфолио-->
       <section class="portfolio">
-        <h1 hidden>Портфолио</h1>
+        <div class="filter-portfolio-container">
+          <!-- Фильтр портфолио-->
+          <h1 class="visually-hidden">Портфолио</h1>
 
-        <ul class="list">
-          <li><button type="button" class="filters">Все</button></li>
-          <li>
-            <button type="button" class="filters">Веб-сайты</button>
-          </li>
-          <li>
-            <button type="button" class="filters">Приложения</button>
-          </li>
-          <li>
-            <button type="button" class="filters">Дизайн</button>
-          </li>
-          <li>
-            <button type="button" class="filters">Маркетинг</button>
-          </li>
-        </ul>
+          <ul class="filter-portfolio list">
+            <li class="filter-button">
+              <button type="button" class="filters">Все</button>
+            </li>
+            <li class="filter-button">
+              <button type="button" class="filters">Веб-сайты</button>
+            </li>
+            <li class="filter-button">
+              <button type="button" class="filters">Приложения</button>
+            </li>
+            <li class="filter-button">
+              <button type="button" class="filters">Дизайн</button>
+            </li>
+            <li class="filter-button">
+              <button type="button" class="filters">Маркетинг</button>
+            </li>
+          </ul>
+        </div>
 
         <!-- Портфолио-->
-
-        <ul class="list">
-          <li>
-            <a
-              class="link"
-              href="https://www.google.com.ua/?hl=ru"
-              target="_blank"
-            >
-              <img
-                src="images/portfolio/img.jpg"
-                alt="Демонстрация веб-сайта"
-                width="370"
-              />
-              <h2 class="work-name">Технокряк</h2>
-              <p class="work-type">Веб-сайт</p>
-            </a>
-          </li>
-          <li>
-            <a
-              class="link"
-              href="https://www.google.com.ua/?hl=ru"
-              target="_blank"
-            >
-              <img
-                src="images/portfolio/img-1.jpg"
-                alt="Демонстрация дизайна"
-                width="370"
-              />
-              <h2 class="work-name">Постер New Orlean vs Goden Star</h2>
-              <p class="work-type">Дизайн</p>
-            </a>
-          </li>
-          <li>
-            <a
-              class="link"
-              href="https://www.google.com.ua/?hl=ru"
-              target="_blank"
-            >
-              <img
-                src="images/portfolio/img-2.jpg"
-                alt="Демонстрация приложения"
-                width="370"
-              />
-              <h2 class="work-name">Ресторан Seafood</h2>
-              <p class="work-type">Приложение</p>
-            </a>
-          </li>
-          <li>
-            <a
-              class="link"
-              href="https://www.google.com.ua/?hl=ru"
-              target="_blank"
-            >
-              <img
-                src="images/portfolio/img-3.jpg"
-                alt="Демонстрация маркетинг"
-                width="370"
-              />
-              <h2 class="work-name">Проект Prime</h2>
-              <p class="work-type">Маркетинг</p>
-            </a>
-          </li>
-          <li>
-            <a
-              class="link"
-              href="https://www.google.com.ua/?hl=ru"
-              target="_blank"
-            >
-              <img
-                src="images/portfolio/img-4.jpg"
-                alt="Демонстрация демонстрация приложения"
-                width="370"
-              />
-              <h2 class="work-name">Проект Boxes</h2>
-              <p class="work-type">Приложение</p>
-            </a>
-          </li>
-          <li>
-            <a
-              class="link"
-              href="https://www.google.com.ua/?hl=ru"
-              target="_blank"
-            >
-              <img
-                src="images/portfolio/img-5.jpg"
-                alt="Демонстрация веб-сайта"
-                width="370"
-              />
-              <h2 class="work-name">Inspiration has no Borders</h2>
-              <p class="work-type">Веб-сайт</p>
-            </a>
-          </li>
-          <li>
-            <a
-              class="link"
-              href="https://www.google.com.ua/?hl=ru"
-              target="_blank"
-            >
-              <img
-                src="images/portfolio/img-6.jpg"
-                alt="Демонстрация дизайна"
-                width="370"
-              />
-              <h2 class="work-name">Издание Limited Edition</h2>
-              <p class="work-type">Дизайн</p>
-            </a>
-          </li>
-          <li>
-            <a
-              class="link"
-              href="https://www.google.com.ua/?hl=ru"
-              target="_blank"
-            >
-              <img
-                src="images/portfolio/img-7.jpg"
-                alt="Демонстрация маркетинг"
-                width="370"
-              />
-              <h2 class="work-name">Проект LAB</h2>
-              <p class="work-type">Маркетинг</p>
-            </a>
-          </li>
-          <li>
-            <a
-              class="link"
-              href="https://www.google.com.ua/?hl=ru"
-              target="_blank"
-            >
-              <img
-                src="images/portfolio/img-8.jpg"
-                alt="Демонстрация приложения"
-                width="370"
-              />
-              <h2 class="work-name">Growing Business</h2>
-              <p class="work-type">Приложение</p>
-            </a>
-          </li>
-        </ul>
+        <div class="portfolio-container">
+          <ul class="portfolio-list list">
+            <li class="portfolio-list-item">
+              <a
+                class="link"
+                href="https://www.google.com.ua/?hl=ru"
+                target="_blank"
+              >
+                <img
+                  src="images/portfolio/img.jpg"
+                  alt="Демонстрация веб-сайта"
+                  width="370"
+                />
+                <div class="portfolio-list-item-wrapper">
+                  <h2 class="work-name">Технокряк</h2>
+                  <p class="work-type">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-list-item">
+              <a
+                class="link"
+                href="https://www.google.com.ua/?hl=ru"
+                target="_blank"
+              >
+                <img
+                  src="images/portfolio/img-1.jpg"
+                  alt="Демонстрация дизайна"
+                  width="370"
+                />
+                <div class="portfolio-list-item-wrapper">
+                  <h2 class="work-name">Постер New Orlean vs Goden Star</h2>
+                  <p class="work-type">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-list-item">
+              <a
+                class="link"
+                href="https://www.google.com.ua/?hl=ru"
+                target="_blank"
+              >
+                <img
+                  src="images/portfolio/img-2.jpg"
+                  alt="Демонстрация приложения"
+                  width="370"
+                />
+                <div class="portfolio-list-item-wrapper">
+                  <h2 class="work-name">Ресторан Seafood</h2>
+                  <p class="work-type">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-list-item">
+              <a
+                class="link"
+                href="https://www.google.com.ua/?hl=ru"
+                target="_blank"
+              >
+                <img
+                  src="images/portfolio/img-3.jpg"
+                  alt="Демонстрация маркетинг"
+                  width="370"
+                />
+                <div class="portfolio-list-item-wrapper">
+                  <h2 class="work-name">Проект Prime</h2>
+                  <p class="work-type">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-list-item">
+              <a
+                class="link"
+                href="https://www.google.com.ua/?hl=ru"
+                target="_blank"
+              >
+                <img
+                  src="images/portfolio/img-4.jpg"
+                  alt="Демонстрация демонстрация приложения"
+                  width="370"
+                />
+                <div class="portfolio-list-item-wrapper">
+                  <h2 class="work-name">Проект Boxes</h2>
+                  <p class="work-type">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-list-item">
+              <a
+                class="link"
+                href="https://www.google.com.ua/?hl=ru"
+                target="_blank"
+              >
+                <img
+                  src="images/portfolio/img-5.jpg"
+                  alt="Демонстрация веб-сайта"
+                  width="370"
+                />
+                <div class="portfolio-list-item-wrapper">
+                  <h2 class="work-name">Inspiration has no Borders</h2>
+                  <p class="work-type">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-list-item">
+              <a
+                class="link"
+                href="https://www.google.com.ua/?hl=ru"
+                target="_blank"
+              >
+                <img
+                  src="images/portfolio/img-6.jpg"
+                  alt="Демонстрация дизайна"
+                  width="370"
+                />
+                <div class="portfolio-list-item-wrapper">
+                  <h2 class="work-name">Издание Limited Edition</h2>
+                  <p class="work-type">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-list-item">
+              <a
+                class="link"
+                href="https://www.google.com.ua/?hl=ru"
+                target="_blank"
+              >
+                <img
+                  src="images/portfolio/img-7.jpg"
+                  alt="Демонстрация маркетинг"
+                  width="370"
+                />
+                <div class="portfolio-list-item-wrapper">
+                  <h2 class="work-name">Проект LAB</h2>
+                  <p class="work-type">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-list-item">
+              <a
+                class="link"
+                href="https://www.google.com.ua/?hl=ru"
+                target="_blank"
+              >
+                <img
+                  src="images/portfolio/img-8.jpg"
+                  alt="Демонстрация приложения"
+                  width="370"
+                />
+                <div class="portfolio-list-item-wrapper">
+                  <h2 class="work-name">Growing Business</h2>
+                  <p class="work-type">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <!-- Футер -->
 
     <footer class="footer">
-      <h3 class="footer-title" hidden>Контактные данные</h3>
-      <a class="logo link logo-footer" href="index.html"
-        ><span class="logo web">Web</span>Studio</a
-      >
-      <!-- <a href="/"><img src="./images/webstudio.svg" alt="Логотип сайта" width="145"></a> -->
-      <address class="address">
-        <ul class="address list">
-          <li class="address list">
-            <a
-              class="link street"
-              href="https://goo.gl/maps/oHU4YcyeSBR1wk3o7"
-              target="_blank"
-              rel="noreferrer noopener"
-              >г. Киев, пр-т Леси Украинки,26
-            </a>
-          </li>
-          <li class="address list item">
-            <a class="link f-cont" href="mailto:info@example.com"
-              >info@example.com</a
-            >
-          </li>
-          <li class="address list item">
-            <a class="link f-cont" href="tel:+380991111111"
-              >+38 099 111 11 11</a
-            >
-          </li>
-        </ul>
-      </address>
+      <div class="footer-container">
+        <h3 class="footer-title visually-hidden">Контактные данные</h3>
+        <a class="logo link logo-footer" href="index.html">
+          <span class="logo web">Web</span>Studio</a
+        >
+        <!-- <a href="/"><img src="./images/webstudio.svg" alt="Логотип сайта" width="145"></a> -->
+        <address class="address">
+          <ul class="address-list list">
+            <li class="address-list-item list">
+              <a
+                class="link street"
+                href="https://goo.gl/maps/oHU4YcyeSBR1wk3o7"
+                target="_blank"
+                rel="noreferrer noopener"
+                >г. Киев, пр-т Леси Украинки,26</a
+              >
+            </li>
+            <li class="address-list-item list item">
+              <a class="link f-cont" href="mailto:info@example.com"
+                >info@example.com</a
+              >
+            </li>
+            <li class="address-list-item list item">
+              <a class="link f-cont" href="tel:+380991111111"
+                >+38 099 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
