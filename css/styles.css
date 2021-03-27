@@ -224,7 +224,6 @@ body {
 
 .advantages-container {
   padding-top: var(--section-pt);
-  padding-bottom: var(--section-pb);
   width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
@@ -452,13 +451,13 @@ body {
 .filter-portfolio {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
   margin-bottom: 50px;
 }
 
 .portfolio {
   background-color: var(--background-color2);
   padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 .filters {
